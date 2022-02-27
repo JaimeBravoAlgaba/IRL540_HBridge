@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>D:\Proyectos\IRL540_HBridge\IRL540_HBridge.sch</source>
+    <date>27/02/2022 2:09:22</date>
+    <tool>Eeschema (5.1.10)-1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>IRL540_HBridge Diagram</title>
+        <company>AE Reset</company>
+        <rev>27/02/2022</rev>
+        <date>2022-02-27</date>
+        <source>IRL540_HBridge.sch</source>
+        <comment number="1" value="Autor: Jaime Bravo Algaba"/>
+        <comment number="2" value="Proyecto: Coche RC"/>
+        <comment number="3" value="Descripción: driver de motores con control de giro y pin enable para control de PWM."/>
+        <comment number="4" value="IRL540 HBridge"/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="UE1">
+      <value>74LS00</value>
+      <datasheet>http://www.ti.com/lit/gpn/sn74ls00</datasheet>
+      <libsource lib="74xx" part="74LS00" description="quad 2-input NAND gate"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>621DFE62</tstamp>
+    </comp>
+    <comp ref="UA1">
+      <value>74LS00</value>
+      <datasheet>http://www.ti.com/lit/gpn/sn74ls00</datasheet>
+      <libsource lib="74xx" part="74LS00" description="quad 2-input NAND gate"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>621E1327</tstamp>
+    </comp>
+    <comp ref="UB1">
+      <value>74LS00</value>
+      <datasheet>http://www.ti.com/lit/gpn/sn74ls00</datasheet>
+      <libsource lib="74xx" part="74LS00" description="quad 2-input NAND gate"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>621E31F4</tstamp>
+    </comp>
+    <comp ref="UA2">
+      <value>74LS08</value>
+      <datasheet>http://www.ti.com/lit/gpn/sn74LS08</datasheet>
+      <libsource lib="74xx" part="74LS08" description="Quad And2"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>621FEA32</tstamp>
+    </comp>
+    <comp ref="UB2">
+      <value>74LS08</value>
+      <datasheet>http://www.ti.com/lit/gpn/sn74LS08</datasheet>
+      <libsource lib="74xx" part="74LS08" description="Quad And2"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>62200A00</tstamp>
+    </comp>
+    <comp ref="UC1">
+      <value>74LS08</value>
+      <datasheet>http://www.ti.com/lit/gpn/sn74LS08</datasheet>
+      <libsource lib="74xx" part="74LS08" description="Quad And2"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6220C933</tstamp>
+    </comp>
+    <comp ref="UD1">
+      <value>74LS08</value>
+      <datasheet>http://www.ti.com/lit/gpn/sn74LS08</datasheet>
+      <libsource lib="74xx" part="74LS08" description="Quad And2"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6220E048</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>10k</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6222BC15</tstamp>
+    </comp>
+    <comp ref="UE2">
+      <value>74LS08</value>
+      <datasheet>http://www.ti.com/lit/gpn/sn74LS08</datasheet>
+      <libsource lib="74xx" part="74LS08" description="Quad And2"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>621FBAB6</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>IRL540N</value>
+      <footprint>Package_TO_SOT_THT:TO-220-3_Vertical</footprint>
+      <datasheet>http://www.irf.com/product-info/datasheets/data/irf540n.pdf</datasheet>
+      <libsource lib="Transistor_FET" part="IRF540N" description="33A Id, 100V Vds, HEXFET N-Channel MOSFET, TO-220"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>622336A9</tstamp>
+    </comp>
+    <comp ref="Q2">
+      <value>IRL540N</value>
+      <footprint>Package_TO_SOT_THT:TO-220-3_Vertical</footprint>
+      <datasheet>http://www.irf.com/product-info/datasheets/data/irf540n.pdf</datasheet>
+      <libsource lib="Transistor_FET" part="IRF540N" description="33A Id, 100V Vds, HEXFET N-Channel MOSFET, TO-220"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6223844D</tstamp>
+    </comp>
+    <comp ref="Q4">
+      <value>IRL540N</value>
+      <footprint>Package_TO_SOT_THT:TO-220-3_Vertical</footprint>
+      <datasheet>http://www.irf.com/product-info/datasheets/data/irf540n.pdf</datasheet>
+      <libsource lib="Transistor_FET" part="IRF540N" description="33A Id, 100V Vds, HEXFET N-Channel MOSFET, TO-220"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>62238453</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>10k</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>622685FA</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>10k</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6226A321</tstamp>
+    </comp>
+    <comp ref="Q3">
+      <value>IRL540N</value>
+      <footprint>Package_TO_SOT_THT:TO-220-3_Vertical</footprint>
+      <datasheet>http://www.irf.com/product-info/datasheets/data/irf540n.pdf</datasheet>
+      <libsource lib="Transistor_FET" part="IRF540N" description="33A Id, 100V Vds, HEXFET N-Channel MOSFET, TO-220"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>62235AAB</tstamp>
+    </comp>
+    <comp ref="JP1">
+      <value>Jumper</value>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Jumper" description="Jumper, normally closed"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>622D3C34</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="74xx" part="74LS00">
+      <aliases>
+        <alias>74LS37</alias>
+        <alias>7400</alias>
+        <alias>74HCT00</alias>
+        <alias>74HC00</alias>
+      </aliases>
+      <description>quad 2-input NAND gate</description>
+      <docs>http://www.ti.com/lit/gpn/sn74ls00</docs>
+      <footprints>
+        <fp>DIP*W7.62mm*</fp>
+        <fp>SO14*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">74LS00</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="input"/>
+        <pin num="2" name="~" type="input"/>
+        <pin num="3" name="~" type="output"/>
+        <pin num="4" name="~" type="input"/>
+        <pin num="5" name="~" type="input"/>
+        <pin num="6" name="~" type="output"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="~" type="output"/>
+        <pin num="9" name="~" type="input"/>
+        <pin num="10" name="~" type="input"/>
+        <pin num="11" name="~" type="output"/>
+        <pin num="12" name="~" type="input"/>
+        <pin num="13" name="~" type="input"/>
+        <pin num="14" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="74xx" part="74LS08">
+      <description>Quad And2</description>
+      <docs>http://www.ti.com/lit/gpn/sn74LS08</docs>
+      <footprints>
+        <fp>DIP*W7.62mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">74LS08</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="input"/>
+        <pin num="2" name="~" type="input"/>
+        <pin num="3" name="~" type="output"/>
+        <pin num="4" name="~" type="input"/>
+        <pin num="5" name="~" type="input"/>
+        <pin num="6" name="~" type="output"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="~" type="output"/>
+        <pin num="9" name="~" type="input"/>
+        <pin num="10" name="~" type="input"/>
+        <pin num="11" name="~" type="output"/>
+        <pin num="12" name="~" type="input"/>
+        <pin num="13" name="~" type="input"/>
+        <pin num="14" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Jumper">
+      <description>Jumper, normally closed</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>SolderJumper*</fp>
+        <fp>Jumper*</fp>
+        <fp>TestPoint*2Pads*</fp>
+        <fp>TestPoint*Bridge*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">JP</field>
+        <field name="Value">Jumper</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Transistor_FET" part="BUZ11">
+      <aliases>
+        <alias>IRF3205</alias>
+        <alias>IRF540N</alias>
+        <alias>IRF740</alias>
+        <alias>IRLB8721PBF</alias>
+        <alias>IRLZ34N</alias>
+        <alias>IRLZ44N</alias>
+        <alias>VNP10N07</alias>
+        <alias>IPP060N06N</alias>
+      </aliases>
+      <description>30A Id, 50V Vds, N-Channel Power MOSFET, TO-220</description>
+      <docs>https://media.digikey.com/pdf/Data%20Sheets/Fairchild%20PDFs/BUZ11.pdf</docs>
+      <footprints>
+        <fp>TO?220*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">BUZ11</field>
+        <field name="Footprint">Package_TO_SOT_THT:TO-220-3_Vertical</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="D" type="passive"/>
+        <pin num="3" name="S" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="74xx">
+      <uri>C:\Program Files\KiCad\share\kicad\library/74xx.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Device.lib</uri>
+    </library>
+    <library logical="Transistor_FET">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Transistor_FET.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="GNDREF">
+      <node ref="Q4" pin="3"/>
+      <node ref="R2" pin="2"/>
+      <node ref="UE2" pin="7"/>
+      <node ref="UE1" pin="7"/>
+      <node ref="R3" pin="2"/>
+      <node ref="Q3" pin="3"/>
+      <node ref="R1" pin="2"/>
+    </net>
+    <net code="2" name="Net-(UC1-Pad10)">
+      <node ref="UC1" pin="10"/>
+      <node ref="UD1" pin="12"/>
+    </net>
+    <net code="3" name="VDD">
+      <node ref="Q2" pin="2"/>
+      <node ref="Q1" pin="2"/>
+    </net>
+    <net code="4" name="O_B">
+      <node ref="Q2" pin="3"/>
+      <node ref="Q4" pin="2"/>
+    </net>
+    <net code="5" name="Net-(UA1-Pad3)">
+      <node ref="UA1" pin="3"/>
+      <node ref="UB2" pin="5"/>
+    </net>
+    <net code="6" name="Net-(Q4-Pad1)">
+      <node ref="UD1" pin="11"/>
+      <node ref="Q4" pin="1"/>
+    </net>
+    <net code="7" name="Net-(Q2-Pad1)">
+      <node ref="Q2" pin="1"/>
+      <node ref="UC1" pin="8"/>
+    </net>
+    <net code="8" name="Net-(Q3-Pad1)">
+      <node ref="UB2" pin="6"/>
+      <node ref="Q3" pin="1"/>
+    </net>
+    <net code="9" name="Net-(Q1-Pad1)">
+      <node ref="UA2" pin="3"/>
+      <node ref="Q1" pin="1"/>
+    </net>
+    <net code="10" name="EN">
+      <node ref="UA2" pin="2"/>
+      <node ref="UB2" pin="4"/>
+      <node ref="JP1" pin="2"/>
+      <node ref="R3" pin="1"/>
+    </net>
+    <net code="11" name="O_A">
+      <node ref="Q3" pin="2"/>
+      <node ref="Q1" pin="3"/>
+    </net>
+    <net code="12" name="+5V">
+      <node ref="JP1" pin="1"/>
+      <node ref="UE2" pin="14"/>
+      <node ref="UE1" pin="14"/>
+    </net>
+    <net code="13" name="I_A">
+      <node ref="R1" pin="1"/>
+      <node ref="UA1" pin="1"/>
+      <node ref="UA1" pin="2"/>
+      <node ref="UA2" pin="1"/>
+    </net>
+    <net code="14" name="Net-(UB1-Pad6)">
+      <node ref="UB1" pin="6"/>
+      <node ref="UD1" pin="13"/>
+    </net>
+    <net code="15" name="I_B">
+      <node ref="UC1" pin="9"/>
+      <node ref="UB1" pin="5"/>
+      <node ref="UB1" pin="4"/>
+      <node ref="R2" pin="1"/>
+    </net>
+  </nets>
+</export>
