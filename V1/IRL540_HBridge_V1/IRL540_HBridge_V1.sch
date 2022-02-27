@@ -1,0 +1,530 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "IRL540_HBridge Diagram"
+Date "2022-02-27"
+Rev "27/02/2022"
+Comp "AE Reset"
+Comment1 "Autor: Jaime Bravo Algaba"
+Comment2 "Proyecto: Coche RC"
+Comment3 "Descripción: driver de motores con control de giro y pin enable para control de PWM."
+Comment4 "IRL540 HBridge"
+$EndDescr
+$Comp
+L Device:R R2
+U 1 1 6222BC15
+P 1900 6600
+F 0 "R2" H 1970 6646 50  0000 L CNN
+F 1 "10k" H 1970 6555 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 1830 6600 50  0001 C CNN
+F 3 "~" H 1900 6600 50  0001 C CNN
+	1    1900 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR0104
+U 1 1 62231447
+P 8250 3250
+F 0 "#PWR0104" H 8250 3000 50  0001 C CNN
+F 1 "GNDREF" H 8255 3077 50  0001 C CNN
+F 2 "" H 8250 3250 50  0001 C CNN
+F 3 "" H 8250 3250 50  0001 C CNN
+	1    8250 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:IRF540N Q1
+U 1 1 622336A9
+P 8150 2100
+F 0 "Q1" H 8354 2146 50  0000 L CNN
+F 1 "IRL540N" H 8354 2055 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 8400 2025 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 8150 2100 50  0001 L CNN
+	1    8150 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:IRF540N Q2
+U 1 1 6223844D
+P 8150 4050
+F 0 "Q2" H 8354 4096 50  0000 L CNN
+F 1 "IRL540N" H 8354 4005 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 8400 3975 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 8150 4050 50  0001 L CNN
+	1    8150 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:IRF540N Q4
+U 1 1 62238453
+P 8150 4850
+F 0 "Q4" H 8354 4896 50  0000 L CNN
+F 1 "IRL540N" H 8354 4805 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 8400 4775 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 8150 4850 50  0001 L CNN
+	1    8150 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 4250 8250 4450
+$Comp
+L Device:R R1
+U 1 1 622685FA
+P 1400 6600
+F 0 "R1" H 1470 6646 50  0000 L CNN
+F 1 "10k" H 1470 6555 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 1330 6600 50  0001 C CNN
+F 3 "~" H 1400 6600 50  0001 C CNN
+	1    1400 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR0105
+U 1 1 62268600
+P 1400 6950
+F 0 "#PWR0105" H 1400 6700 50  0001 C CNN
+F 1 "GNDREF" H 1405 6777 50  0001 C CNN
+F 2 "" H 1400 6950 50  0001 C CNN
+F 3 "" H 1400 6950 50  0001 C CNN
+	1    1400 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 6226A321
+P 2400 6600
+F 0 "R3" H 2470 6646 50  0000 L CNN
+F 1 "10k" H 2470 6555 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 2330 6600 50  0001 C CNN
+F 3 "~" H 2400 6600 50  0001 C CNN
+	1    2400 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR0107
+U 1 1 6226E4DA
+P 8250 5200
+F 0 "#PWR0107" H 8250 4950 50  0001 C CNN
+F 1 "GNDREF" H 8255 5027 50  0001 C CNN
+F 2 "" H 8250 5200 50  0001 C CNN
+F 3 "" H 8250 5200 50  0001 C CNN
+	1    8250 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR0108
+U 1 1 62294784
+P 8250 1700
+F 0 "#PWR0108" H 8250 1550 50  0001 C CNN
+F 1 "VDD" H 8265 1873 50  0000 C CNN
+F 2 "" H 8250 1700 50  0001 C CNN
+F 3 "" H 8250 1700 50  0001 C CNN
+	1    8250 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 1700 8250 1900
+$Comp
+L power:VDD #PWR0109
+U 1 1 62295F6D
+P 8250 3700
+F 0 "#PWR0109" H 8250 3550 50  0001 C CNN
+F 1 "VDD" H 8265 3873 50  0000 C CNN
+F 2 "" H 8250 3700 50  0001 C CNN
+F 3 "" H 8250 3700 50  0001 C CNN
+	1    8250 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:IRF540N Q3
+U 1 1 62235AAB
+P 8150 2900
+F 0 "Q3" H 8354 2946 50  0000 L CNN
+F 1 "IRL540N" H 8354 2855 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 8400 2825 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 8150 2900 50  0001 L CNN
+	1    8150 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 3100 8250 3250
+Wire Wire Line
+	8250 3700 8250 3850
+Wire Wire Line
+	8250 5050 8250 5200
+Wire Wire Line
+	9250 2500 8250 2500
+Wire Wire Line
+	8250 2300 8250 2500
+Connection ~ 8250 2500
+Wire Wire Line
+	8250 2500 8250 2700
+Wire Wire Line
+	9250 4450 8250 4450
+Connection ~ 8250 4450
+Wire Wire Line
+	8250 4450 8250 4650
+$Comp
+L Connector_Generic:Conn_02x05_Counter_Clockwise J1
+U 1 1 621E8254
+P 2750 5850
+F 0 "J1" H 2800 6267 50  0001 C CNN
+F 1 "CTRL" H 2800 6175 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical" H 2750 5850 50  0001 C CNN
+F 3 "~" H 2750 5850 50  0001 C CNN
+	1    2750 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR0110
+U 1 1 621EB6B1
+P 2350 5650
+F 0 "#PWR0110" H 2350 5400 50  0001 C CNN
+F 1 "GNDREF" H 2355 5477 50  0001 C CNN
+F 2 "" H 2350 5650 50  0001 C CNN
+F 3 "" H 2350 5650 50  0001 C CNN
+	1    2350 5650
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0111
+U 1 1 621EDA79
+P 2350 5750
+F 0 "#PWR0111" H 2350 5600 50  0001 C CNN
+F 1 "+5V" V 2365 5923 50  0000 L BNN
+F 2 "" H 2350 5750 50  0001 C CNN
+F 3 "" H 2350 5750 50  0001 C CNN
+	1    2350 5750
+	0    -1   -1   0   
+$EndComp
+Text GLabel 1250 5850 0    50   Output ~ 0
+EN
+Text GLabel 2250 6050 0    50   Output ~ 0
+I_B
+Text GLabel 1750 5950 0    50   Output ~ 0
+I_A
+Wire Wire Line
+	2350 5650 2550 5650
+Wire Wire Line
+	2350 5750 2550 5750
+Wire Wire Line
+	2550 5750 3050 5750
+Connection ~ 2550 5750
+Wire Wire Line
+	3050 5850 3050 5750
+Connection ~ 3050 5750
+$Comp
+L Connector_Generic:Conn_01x02 MOT1
+U 1 1 621BB79C
+P 9500 3450
+F 0 "MOT1" H 9580 3442 50  0000 L CNN
+F 1 "Conn_01x02" H 9580 3351 50  0000 L CNN
+F 2 "Connector:JWT_A3963_1x02_P3.96mm_Vertical" H 9500 3450 50  0001 C CNN
+F 3 "~" H 9500 3450 50  0001 C CNN
+	1    9500 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 2500 9250 3450
+Wire Wire Line
+	9250 3450 9300 3450
+Wire Wire Line
+	9300 3550 9250 3550
+Wire Wire Line
+	9250 3550 9250 4450
+$Comp
+L Connector_Generic:Conn_01x02 BAT1
+U 1 1 621E096C
+P 3900 6050
+F 0 "BAT1" V 3772 6130 50  0000 L CNN
+F 1 "Conn_01x02" V 3863 6130 50  0000 L CNN
+F 2 "Connector:JWT_A3963_1x02_P3.96mm_Vertical" H 3900 6050 50  0001 C CNN
+F 3 "~" H 3900 6050 50  0001 C CNN
+	1    3900 6050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VDD #PWR0112
+U 1 1 621E1EBC
+P 3800 5650
+F 0 "#PWR0112" H 3800 5500 50  0001 C CNN
+F 1 "VDD" H 3815 5823 50  0000 C CNN
+F 2 "" H 3800 5650 50  0001 C CNN
+F 3 "" H 3800 5650 50  0001 C CNN
+	1    3800 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR0113
+U 1 1 621E4DED
+P 3900 5650
+F 0 "#PWR0113" H 3900 5400 50  0001 C CNN
+F 1 "GNDREF" H 3905 5477 50  0001 C CNN
+F 2 "" H 3900 5650 50  0001 C CNN
+F 3 "" H 3900 5650 50  0001 C CNN
+	1    3900 5650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3900 5650 3900 5850
+Wire Wire Line
+	3800 5650 3800 5850
+$Comp
+L 74xx_dip_14:74XX_DIP_14 IC1
+U 1 1 621F941F
+P 2550 1550
+F 0 "IC1" H 2550 1515 50  0000 C CNN
+F 1 "7400" H 2550 1424 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 2550 1550 50  0001 C CNN
+F 3 "" H 2550 1550 50  0001 C CNN
+	1    2550 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx_dip_14:74XX_DIP_14 IC2
+U 1 1 621FA2E1
+P 4450 1550
+F 0 "IC2" H 4450 1515 50  0000 C CNN
+F 1 "7408" H 4450 1424 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 4450 1550 50  0001 C CNN
+F 3 "" H 4450 1550 50  0001 C CNN
+	1    4450 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #Vcc0101
+U 1 1 621FF76C
+P 3050 1650
+F 0 "#Vcc0101" H 3050 1500 50  0001 C CNN
+F 1 "+5V" H 3065 1823 50  0000 C CNN
+F 2 "" H 3050 1650 50  0001 C CNN
+F 3 "" H 3050 1650 50  0001 C CNN
+	1    3050 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 1850 2900 1850
+Wire Wire Line
+	3050 1650 3050 1850
+$Comp
+L power:GNDREF #GND0101
+U 1 1 62208F0B
+P 2050 2600
+F 0 "#GND0101" H 2050 2350 50  0001 C CNN
+F 1 "GNDREF" H 2055 2427 50  0001 C CNN
+F 2 "" H 2050 2600 50  0001 C CNN
+F 3 "" H 2050 2600 50  0001 C CNN
+	1    2050 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 2450 2050 2450
+Wire Wire Line
+	2050 2450 2050 2600
+$Comp
+L power:+5V #Vcc0102
+U 1 1 6220D5DD
+P 4850 1650
+F 0 "#Vcc0102" H 4850 1500 50  0001 C CNN
+F 1 "+5V" H 4865 1823 50  0000 C CNN
+F 2 "" H 4850 1650 50  0001 C CNN
+F 3 "" H 4850 1650 50  0001 C CNN
+	1    4850 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #GND0102
+U 1 1 6220F00F
+P 4050 2600
+F 0 "#GND0102" H 4050 2350 50  0001 C CNN
+F 1 "GNDREF" H 4055 2427 50  0001 C CNN
+F 2 "" H 4050 2600 50  0001 C CNN
+F 3 "" H 4050 2600 50  0001 C CNN
+	1    4050 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 1850 2050 1850
+Wire Wire Line
+	2050 1850 2050 1950
+Wire Wire Line
+	2050 1950 2200 1950
+Wire Wire Line
+	2200 2150 2050 2150
+Wire Wire Line
+	2050 2150 2050 2250
+Wire Wire Line
+	2050 2250 2200 2250
+Text GLabel 1550 2150 0    50   Input ~ 0
+I_B
+Wire Wire Line
+	2050 2150 1550 2150
+Connection ~ 2050 2150
+Text GLabel 1550 1850 0    50   Input ~ 0
+I_A
+Wire Wire Line
+	2050 1850 1550 1850
+Connection ~ 2050 1850
+Text GLabel 1900 2050 0    50   Output ~ 0
+*I_A
+Wire Wire Line
+	2200 2050 1900 2050
+Text GLabel 1900 2350 0    50   Output ~ 0
+*I_B
+Wire Wire Line
+	2200 2350 1900 2350
+Text GLabel 3600 1850 0    50   Input ~ 0
+I_A
+Wire Wire Line
+	4100 1850 3600 1850
+Text GLabel 3600 2150 0    50   Input ~ 0
+*I_A
+Wire Wire Line
+	4100 2150 3600 2150
+Text GLabel 5300 1950 2    50   Input ~ 0
+I_B
+Wire Wire Line
+	4800 1950 5300 1950
+Text GLabel 5300 2250 2    50   Input ~ 0
+*I_B
+Wire Wire Line
+	4800 2250 5300 2250
+Text GLabel 3600 1950 0    50   Input ~ 0
+EN
+Wire Wire Line
+	4100 1950 3600 1950
+Text GLabel 3600 2250 0    50   Input ~ 0
+EN
+Wire Wire Line
+	4100 2250 3600 2250
+Text GLabel 5300 2350 2    50   Input ~ 0
+EN
+Wire Wire Line
+	4800 2350 5300 2350
+Text GLabel 5300 2050 2    50   Input ~ 0
+EN
+Wire Wire Line
+	4800 2050 5300 2050
+Text GLabel 3900 2050 0    50   Output ~ 0
+S_A1
+Text GLabel 3900 2350 0    50   Output ~ 0
+S_A2
+Wire Wire Line
+	4100 2050 3900 2050
+Wire Wire Line
+	3900 2350 4100 2350
+Wire Wire Line
+	4100 2450 4050 2450
+Wire Wire Line
+	4050 2450 4050 2600
+Wire Wire Line
+	4850 1650 4850 1850
+Wire Wire Line
+	4850 1850 4800 1850
+Text GLabel 5000 2150 2    50   Output ~ 0
+S_B1
+Wire Wire Line
+	4800 2150 5000 2150
+Text GLabel 5000 2450 2    50   Output ~ 0
+S_B2
+Wire Wire Line
+	4800 2450 5000 2450
+Wire Wire Line
+	1400 6750 1400 6850
+Wire Wire Line
+	1400 6850 1900 6850
+Wire Wire Line
+	1900 6850 1900 6750
+Connection ~ 1400 6850
+Wire Wire Line
+	1400 6850 1400 6950
+Wire Wire Line
+	1900 6850 2400 6850
+Wire Wire Line
+	2400 6850 2400 6750
+Connection ~ 1900 6850
+Wire Wire Line
+	1250 5850 1400 5850
+Wire Wire Line
+	1750 5950 1900 5950
+Wire Wire Line
+	2250 6050 2400 6050
+Wire Wire Line
+	1400 5850 1400 6450
+Connection ~ 1400 5850
+Wire Wire Line
+	1400 5850 2550 5850
+Wire Wire Line
+	1900 6450 1900 5950
+Connection ~ 1900 5950
+Wire Wire Line
+	1900 5950 2550 5950
+Wire Wire Line
+	2400 6050 2400 6450
+Connection ~ 2400 6050
+Wire Wire Line
+	2400 6050 2550 6050
+Text GLabel 7750 2100 0    50   Input ~ 0
+S_A1
+Wire Wire Line
+	7950 2100 7750 2100
+Text GLabel 7750 2900 0    50   Input ~ 0
+S_A2
+Wire Wire Line
+	7950 2900 7750 2900
+Text GLabel 7750 4050 0    50   Input ~ 0
+S_B1
+Wire Wire Line
+	7950 4050 7750 4050
+Text GLabel 7750 4850 0    50   Input ~ 0
+S_B2
+Wire Wire Line
+	7950 4850 7750 4850
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 622FA016
+P 4950 5600
+F 0 "H1" H 5050 5646 50  0001 L CNN
+F 1 "MountingHole" H 5050 5600 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 4950 5600 50  0001 C CNN
+F 3 "~" H 4950 5600 50  0001 C CNN
+	1    4950 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 622FA6FC
+P 4950 5850
+F 0 "H2" H 5050 5896 50  0001 L CNN
+F 1 "MountingHole" H 5050 5850 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 4950 5850 50  0001 C CNN
+F 3 "~" H 4950 5850 50  0001 C CNN
+	1    4950 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 622FBF1B
+P 4950 6100
+F 0 "H3" H 5050 6146 50  0001 L CNN
+F 1 "MountingHole" H 5050 6100 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 4950 6100 50  0001 C CNN
+F 3 "~" H 4950 6100 50  0001 C CNN
+	1    4950 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 622FD6B1
+P 4950 6350
+F 0 "H4" H 5050 6396 50  0001 L CNN
+F 1 "MountingHole" H 5050 6350 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 4950 6350 50  0001 C CNN
+F 3 "~" H 4950 6350 50  0001 C CNN
+	1    4950 6350
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
